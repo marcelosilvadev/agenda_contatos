@@ -12,6 +12,7 @@ final String phoneColumn = "phoneColumn";
 final String imgColumn = "imgColumn";
 
 class ContactHelper {
+
   static  final ContactHelper _instance =  ContactHelper.internal();
 
   factory ContactHelper() => _instance;
@@ -96,6 +97,8 @@ class Contact {
   String email;
   String phone;
   String img;
+
+  Contact();
 
   Contact.fromMap(Map, map) {
     id = map[idColumn];
